@@ -1,0 +1,82 @@
+/*Andreina Bolivar-Campbell 9/14/2025*/
+/* CSS reset by Eric Meyer - http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Changed the keys to buttons, adjusted as needed, changed background image,
+styled images*/
+html {
+  font-size: 10px;
+  background: url('barn.jpg') bottom center; /*new background img sourced from: 
+  https://pixabay.com/photos/barn-black-and-white-white-black-2737459/*/
+  background-size: cover;
+
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*Added h1, changed color, added text shadow, & decoration*/
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin: 2rem 0;
+    color: #fca606;
+    text-shadow:
+    2px 2px 0 black;
+    text-decoration: underline;
+    font-weight: bold;
+       
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {/*adjusted padding and text shadow*/
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 1.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+/*button styling*/
+button {
+  border: none;
+  background: black;
+  padding: 0;
+  cursor: pointer;
+}
+/*image styling*/
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: .2rem solid black;  
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
