@@ -1,0 +1,53 @@
+/*Andreina Bolivar-Campbell Project 3 CSS 9/21/2025*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rebeccapurple;
+    color: yellow;
+    text-align: center;
+    padding: 20px; 
+    font-size: 20px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: orange;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: lightblue;
+}
+#friendlist {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
+    text-align: center;
+    color: pink;
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
+    text-align: center;
+}
+#object {
+    margin-top: 20px;
+    font-size: 18px;
+    color: lightgreen;
+}
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: lightgray;
+}
