@@ -1,6 +1,8 @@
  /*Andreina Bolivar-Campbell 9/26/2025 JavaScript30 project 3
  source: JavaScript30: https://courses.wesbos.com/account/access/68c4c553b4c43be5dacea090/view/194128157*/ 
- /*Major change, added music to the sticky nav, once it goes into sticky mode, music plays*/
+ /*Major change, added music to the sticky nav, once it goes into sticky mode, music plays, this was the most 
+ challenging part, because having 2 separate functions for the sticky nav would cause it to not work at all, 
+ I had to combine both codes*/
 
  "use strict";//added strict mode
  console.log('JS is working');// check if JS is connected
