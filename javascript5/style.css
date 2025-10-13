@@ -1,0 +1,101 @@
+/*Andreina Bolivar-Campbell 10/12/2025, javascript5 project*/
+/*Source code: javascript30.com, image sources at end of code*/
+/*Major Changes: halloween theme, moles -> pumpkins, holes -> graves, styled the start button, 
+changed colors, added background image, adjusted margins and padding,
+position of pumpkins*/
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background-image: url('halloween.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  display: block;
+  background-color: black;
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+  color: orangered;
+  text-shadow: 5px 5px 0 rgb(102, 0, 161);
+}
+
+.score {
+  margin-left: 3rem;/*added space b/w score and h1*/
+  background: rgb(79, 0, 82);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+  color: rgb(42, 253, 42)/*Score color*/
+
+}
+/*button styling*/
+button {
+  display: block;
+  margin: 2rem auto;
+  background: orangered;
+  color: black;
+  border: 0;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+  align-items: center;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+/*adjusted grave*/
+.grave {
+  flex: 2 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.grave:after {
+  display: block;
+  background: url(gravestone.svg) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+/*adjusted time*/
+.pumpkin {
+  background: url('pumpkin.svg') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 150%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.7s;
+}
+/*adjusted position of pumpkin when up, so we see the full pumpkin*/
+.grave.up .pumpkin {
+  top: -30%;
+}
+/*image sources: pumpkin: https://pixabay.com/vectors/halloween-pumpkin-scary-spooky-23439/
+gravestone: https://pixabay.com/vectors/gravestone-halloween-horror-retro-2026737/
+background halloween image: https://pixabay.com/illustrations/halloween-halloween-poster-6738713/*/

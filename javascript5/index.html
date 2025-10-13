@@ -1,0 +1,49 @@
+<!--Andreina Bolivar-Campbell 10/12/25 javascript5 project-->
+<!--Major Changes: halloween theme, switched moles to pumpkins, dirt holes to tombstones,
+ moved script to a separate page, added audio when click on start & lasts until the game
+ ends-->
+ <!--struggled with getting the game to start, a few syntax errors needed fixed-->
+<!--source code: javascript30.com, image and audio sources at end of code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--added code-->
+  <title>Whack A Jack!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+<body>
+
+  <h1>Whack-a-Jack! <span class="score">0</span></h1>
+  <button id="start">Start!</button><!--changed due to conflict w JS, wasn't wanting to start-->
+
+  <div class="game">
+    <div class="grave grave1">
+      <div class="pumpkin"></div>
+    </div>
+    <div class="grave grave2">
+      <div class="pumpkin"></div>
+    </div>
+    <div class="grave grave3">
+      <div class="pumpkin"></div>
+    </div>
+    <div class="grave grave4">
+      <div class="pumpkin"></div>
+    </div>
+    <div class="grave grave5">
+      <div class="pumpkin"></div>
+    </div>
+    <div class="grave grave6">
+      <div class="pumpkin"></div>
+    </div>
+  </div>
+<audio id="halloween-audio" src="halloween-music.mp3" preload="auto"></audio>
+<!--audio source: https://pixabay.com/music/scary-childrens-tunes-halloween-music-400868/-->
+<!--image sources: pumpkin: https://pixabay.com/vectors/halloween-pumpkin-scary-spooky-23439/
+gravestone: https://pixabay.com/vectors/gravestone-halloween-horror-retro-2026737/
+background halloween image: https://pixabay.com/illustrations/halloween-halloween-poster-6738713/-->
+<script src="script.js"></script>
+</body>
+</html>
